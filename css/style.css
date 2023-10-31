@@ -1,0 +1,123 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#container{
+    display: none;
+    background-color: skyblue;
+    overflow: hidden;
+    position: relative;
+    width: 80%;
+    height: 500px;
+    border: 2px solid black;
+    margin: 0% auto;
+}
+#container2{
+    margin: 0% auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:  2px solid black;
+    width: 80%;
+    height: 200px;
+}
+
+.pipe{
+    width: 80px;
+    position: absolute;
+    bottom: 0;
+    animation: pipeAni 2s infinite linear;
+}
+
+.nuvem1{
+    width: 200px;
+    position: absolute;
+    bottom:400px;
+    animation: pipeAni 4s infinite linear;
+}
+
+.nuvem2{
+    width: 150px;
+    position: absolute;
+    bottom: 350px;
+    animation:nuvemAni 4.5s infinite linear;
+}
+
+.mario{
+    width: 150px;
+    position:absolute;
+    bottom: 0;
+}
+
+.jump{
+    animation: jump 1s ease-out;
+}
+
+
+@keyframes pipeAni{
+    from {
+        right: 0px;
+    }
+
+
+    to{
+        right: 100%;
+    }
+}
+
+@keyframes nuvemAni{
+    from {
+        right: 0px;
+    }
+
+
+    to{
+        right: 100%;
+    }
+}
+
+
+@keyframes jump {
+    0%{
+        bottom: 0px;
+    }
+    40%{
+        bottom: 180px;
+    }
+    50%{
+        bottom: 180px;
+    }
+    60%{
+        bottom: 180px;
+    }
+    100%{
+        bottom: 0px;
+    }
+}
+
+
+
+/*Menu*/
+
+#menu{
+    border: 2px solid black;
+   background-color: skyblue; 
+    margin: 0% auto;
+    width: 80%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu button{
+    cursor: pointer;
+   padding:10px 30px;
+   border: none;
+   border-radius: 10px;
+   box-sizing: content-box;
+
+}
