@@ -5,21 +5,12 @@ var player = document.getElementById('play');
 var menu = document.getElementById('menu');
 var pontuacao = document.getElementById('pontuação')
 
-
-
-
-
 const jump = () => {
     mario.classList.add('jump')
     setTimeout(() => {
         mario.classList.remove('jump')
     }, 1000)
-
-
-
 }
-
-
 
 const loop = setInterval(() => {
     var pipePosition = pipe.offsetLeft;
@@ -43,10 +34,6 @@ pipe.addEventListener('animationiteration', () => {
     iterationCount = iterationCount +100;
     pontuacao.innerText = iterationCount;
 });
-
-
-
-
 
 
 function play() {
